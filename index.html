@@ -10,58 +10,67 @@
       href="./img/portfolioFavicon1.png"
       type="image/x-icon"
     />
+    <!--Linking to style.css which is the css file for the customization of index.html and my_resume.html-->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="navContainer">
-      <!-- Adding a navigation bar-->
-      <nav id="navbar">
-        <a href="./index.html" class="navOption">Home</a>
-        <a href="./html/my_resume.html" class="navOption">Resume</a>
-        <a href="./html/my_fun_facts.html" class="navOption">FunFactsAboutMe</a>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <ul class="navlinks">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./html/my_resume.html">My Resume</a></li>
+          <li class="facts">
+            <a href="">Facts About Me</a>
+            <ul class="dropdown">
+              <li><a href="./html/movie.html">My Favorite Movie</a></li>
+              <li><a href="./html/my_fun_facts.html">My Favorite Song</a></li>
+              <li><a href="./html/book.html">My Favorite Book</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
     <hr />
-    <div id="headingContainer">
-      <strong><i>Portfolio Website:</i></strong>
-      <h2>Basil George</h2>
+    <div class="head">
+      <strong>Portfolio Website:</strong>
+      <h2 class="subhead">Basil George</h2>
     </div>
-
+    <div id="quotecontainer">
+      <span>
+        "Negativity isn't the way to go, smile more, eat some chocolate" ~Ed
+        Sheeran</span
+      >
+    </div>
     <header id="page_header">
-      <div id="imageContainer">
+      <div class="imageContainerwithquote">
         <!-- Adding profile picture-->
         <img
           src="./img/basilgeorgepfp.JPG"
           alt="Basil George Profile Picture"
-          height="200"
-          width="200"
+          height="500"
+          width="400"
         />
+
+        <main class="imageContainerwithquote">
+          Hello, my name is Basil George and I am from Michigan. I was born and
+          raised in India and I moved to the United States in the year 2020. I
+          am currently a junior at Oakland University and I am an Information
+          Technology major. My future goal is to get into a reputable company in
+          the IT field.
+        </main>
       </div>
-      <!--Quote-->
-      <p>
-        <i>
-          "Negativity isn't the way to go, smile more, eat some chocolate" ~Ed
-          Sheeran
-        </i>
-      </p>
       <br />
     </header>
-    <div id="mainInfoContainer">
-      <main>
-        Hello, my name is Basil George and I am from Michigan. I was born and
-        raised in India and I moved to the United States in the year 2020. I am
-        currently a junior at Oakland University and I am an Information
-        Technology major. My future goal is to get into a reputable company in
-        the IT field.
-      </main>
-    </div>
     <div id="otherPagesContainer">
       <!--Link to other pages-->
       <p>
         To know more about me check out my
-        <a href="./html/my_resume.html" class="navoption">Page 2</a>
-        and <a href="./html/my_fun_facts.html" class="navoption">Page 3</a>
+        <a href="./html/my_resume.html" class="navoption">Resume</a>
       </p>
     </div>
+
     <br />
     <div id="progressBarContainer">
       <h5>
@@ -72,27 +81,29 @@
       </h5>
     </div>
     <hr />
-    <!--Footer at the end of each page-->
+    <!-- Footer at the end of each page-->
     <footer>
-      <p>&copy; Basil George, 2023</p>
-      <a href="mailto:basilgeorgejosephite@gmail.com"
-        ><img
-          src="./img/gmail.png"
-          alt="gmail logo"
-          height="25"
-          width="20"
-        />basilgeorgejosephite@gmail.com</a
-      >
       <br />
-      <br />
-      <a href="https://www.instagram.com/_basilgeorge_/"
-        ><img
-          src="./img/insta.png"
-          alt="instagram logo"
-          height="25"
-          width="20"
-        />_basilgeorge_</a
-      >
+      <hr color="black" />
+      <div class="footcontainer">
+        <span class="footlinks">&copy; Basil George, 2023</span>
+        <a href="mailto:basilgeorgejosephite@gmail.com" class="footlinks"
+          ><img
+            src="./img/gmail.png"
+            alt="gmail logo"
+            height="25"
+            width="20"
+          />basilgeorgejosephite@gmail.com</a
+        >
+        <a href="https://www.instagram.com/_basilgeorge_/" class="footlinks"
+          ><img
+            src="./img/insta.png"
+            alt="instagram logo"
+            height="25"
+            width="20"
+          />_basilgeorge_</a
+        >
+      </div>
     </footer>
   </body>
 </html>

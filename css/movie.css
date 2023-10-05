@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --navcolor: #003249;
+  --primcolor: #007ea7;
+  --seccolor: #80ced7;
+  --extracolor: #9ad1d4;
+  --bodycolor: #ccdbdc;
+  background-image: url(/img/rajini.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+.menu li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navcolor);
+}
+
+.navlinks a {
+  color: var(--extracolor);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.menu li:hover {
+  background-color: rgba(3, 81, 55, 0.788);
+  border-radius: 5px;
+  margin-right: 40px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/*dropdown */
+.facts {
+  position: relative;
+}
+
+.dropdown {
+  background-color: black;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: rgba(3, 81, 55, 0.788);
+}
+
+.facts:hover .dropdown {
+  display: block;
+}
+
+/* responsive styling for the navbar */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  color: #ffff;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--navcolor);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: rgba(3, 81, 55, 0.788);
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: rgba(3, 81, 55, 0.788);
+  }
+}
+#mediaContainer {
+  padding: 90px;
+}
+#mediaContainer a:hover {
+  color: var(--navcolor);
+  font-size: larger;
+}
+
+.medialist {
+  padding: 10%;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+  text-shadow: 10px 1px 0 black;
+  font-size: 90px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.mediaheading {
+  display: flex;
+  background-color: var(--primcolor);
+  justify-content: center;
+  margin: 20x;
+  padding: 30px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.videoContainer {
+  background-color:black;
+  padding: 2px;
+}
