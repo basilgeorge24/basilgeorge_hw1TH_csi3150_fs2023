@@ -9,7 +9,7 @@ body {
   --seccolor: #80ced7;
   --extracolor: #9ad1d4;
   --bodycolor: #ccdbdc;
-  background-image: url(/img/mgk.jpg);
+  background-image: url(../img/mgk.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
